@@ -1,23 +1,7 @@
 <?php
- /* // Set CORS headers
-header("Access-Control-Allow-Origin: *");  // Adjust this to a specific domain if needed
-header("Access-Control-Allow-Credentials: true");
-header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");  // Add other methods as needed
-header("Access-Control-Allow-Headers: Content-Type, X-Requested-With");  // Add other headers as needed
-    header('Access-Control-Max-Age: 86400');
-// Respond to preflight request
-if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
-    // Exit early so the "actual" request is not made as a preflight request
-    exit(0);
-}
-    // cache for 1 day
-
-
-// Access-Control headers are received during OPTIONS requests
-
-
+header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
-*/
+
   include_once '../../config/Database.php';
   include_once '../../models/Author.php';
 
