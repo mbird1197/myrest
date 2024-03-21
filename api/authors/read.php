@@ -56,8 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     }
 
     // Turn to JSON & output
-    echo json_encode($posts_arr);
-
+   // echo json_encode($posts_arr);
+   print_r(json_encode($post_arr));
   } else {
     // No Posts
     echo json_encode(
